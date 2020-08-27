@@ -8,11 +8,11 @@ while(Intializer==0):  # Condition to start the program
         Intializer += 1
         for Number in range(Minimum,Maximum):  # Intializing for loop between the ranges
             count = 0
-            for i in range(2,Number//2 + 1): #  
+            for i in range(2,Number//2 + 1): #  When a number gets divided with in any of the number of half of its range it is a composite number
                 if(Number%i ==0):
                     count += 1
                     break
-            if(count==0 and Number!= 1):
-                print(Number)
+            if(count==0 and Number!= 1): # Condition to check whether the number is prime or not
+                print(Number) # prints the prime number
     else:   
         print("Minimum value is greater than value, Please enter Minimum value less than Maximum value")
